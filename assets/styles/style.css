@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Carrois+Gothic&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nanum+Gothic&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Carrois+Gothic&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nanum+Gothic&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Playfair Display";
+}
+
+body {
+  background: rgb(124, 192, 216);
+  background: radial-gradient(circle, rgb(124, 192, 216) 0%, rgb(190, 224, 236) 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+header img {
+  display: flex;
+  justify-content: center;
+  border-radius: 8rem;
+  height: 20vh;
+  width: 30vh;
+  margin-top: 60px;
+}
+
+.container {
+  width: 100%;
+  max-height: 100%;
+  padding: 10px;
+  max-width: 479px;
+  display: grid;
+  place-items: center;
+}
+.container .h1 {
+  font-family: "Sedgwick Ave Display";
+  font-size: 5vh;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+}
+.container .style {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container .style #filter-tasks {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+.container .to-do-list {
+  width: 100%;
+  max-width: 479px;
+  background-color: #bee0ec;
+  padding: 20px 20px 80px;
+  border-radius: 1rem;
+}
+.container .to-do-list .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e9f5f9;
+  border-radius: 1rem;
+}
+.container .to-do-list .task #input-box {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+  padding-left: 1.5rem;
+}
+.container .to-do-list .task ::placeholder {
+  font-family: "Playfair Display";
+  padding-left: 1rem;
+  font-size: 14px;
+}
+.container .to-do-list .task button {
+  border: none;
+  outline: none;
+  background: #272b85;
+  padding-right: 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  font-family: "Playfair Display";
+  color: white;
+}
+.container .to-do-list ul .completed {
+  text-decoration: line-through;
+}
+.container .to-do-list ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "Playfair Display";
+}
+.container .to-do-list ul li input[type=checkbox] {
+  position: absolute;
+  left: 50px;
+}
+.container .to-do-list ul li button[type=button] {
+  background-color: red;
+  color: white;
+  border: none;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 481px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
