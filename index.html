@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do-List</title>
+        <link rel="stylesheet" href="/assets/styles/style.css">
+        <script defer src="/assets/js/script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-BQtlR+ijUXOUU0lXg/GDm4v7yZrikOvgzFkyfvZPlgkFfC4zRR0SnFgEPLDdHm4HSGy8npMuAPjbRp7AS5Fg0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <img src="/assets/images/todolisticon.gif" alt="todolist.gif">
+        </header>
+        <main>
+            <div class="container">
+                <div class="style">
+                <h1 class="h1">To-Do List: </h1>
+                    <select name="tasks" id="filter-tasks">
+                        <option id="all">All</option>
+                        <option id="completed">Completed</option>
+                        <option id="not-complete">Incomplete</option>
+                    </select>
+                </div>
+                <div class="to-do-list">
+                    <div class="task">
+                        <input type="text" id="input-box" placeholder="Enter a task">
+                        <button id="add-task" type="submit">Add Task</button>
+                    </div>
+                <ul id="task-list">
+                    <!-- <input type="checkbox" class="endedTask"> -->
+                    <!-- <li class="checked">Task1</li> -->
+                    <!-- <li>Task2</li>
+                    <li>Task3</li>
+                    <li>Task4</li> -->
+                </ul>
+                </div>
+            </div>
+            <footer class="footer">
+                &copy; Designed by Zahra Ana ザラ カーマ
+            </footer>
+        </main>
+    </body>
+    </html>

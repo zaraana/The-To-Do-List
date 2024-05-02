@@ -1,0 +1,171 @@
+@import "variables";
+
+*{
+    box-sizing: border-box;
+    font-family: "Playfair Display";
+    // font-size: ;
+}
+body{
+    background: rgb(124,192,216);
+    background: radial-gradient(circle, rgba(124,192,216,1) 0%, rgba(190,224,236,1) 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    // height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+    img{
+        display: flex;
+        justify-content: center;
+        border-radius: 8rem;
+        height: 20vh;
+        width: 30vh;
+        margin-top: 60px;
+    }
+}
+.container{
+    width: 100%;
+    max-height: 100%;
+    padding: 10px;
+    max-width: 479px;
+    display: grid;
+    place-items: center;
+
+    .h1{
+        font-family: "Sedgwick Ave Display";
+        font-size: 5vh;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .style{
+        text-align: center;
+        margin-bottom: 20px;
+
+        #filter-tasks{
+            border: none;
+            outline: none;
+            background: transparent;
+            // padding: 5px;
+            font-size: 1rem;
+            
+        } 
+    }
+    
+    .to-do-list{
+        width: 100%;
+        max-width: 479px;
+        background-color: #bee0ec;
+        padding: 20px 20px 80px;
+        border-radius: 1rem;
+
+        
+        .task{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #e9f5f9;
+            border-radius: 1rem;
+
+            #input-box{
+                // flex: 1;
+                border: none;
+                outline: none;
+                background: transparent;
+                padding: 5px;
+                padding-left: 1.5rem;
+            }
+
+            ::placeholder{
+                font-family: "Playfair Display";
+                padding-left: 1rem;
+                font-size: 14px;
+
+            }
+            button{
+                border: none;
+                outline: none;
+                background: #272b85;
+                padding-right: 1rem;
+                cursor: pointer;
+                border-radius: 1rem;
+                padding: 8px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 12px;
+                font-family: "Playfair Display"; 
+                color: #ffff;
+            }
+        }
+
+        ul{
+            .completed {
+                    text-decoration: line-through;
+                }
+            
+            li{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                font-size: 14px;
+                cursor: pointer;
+                font-family: "Playfair Display";
+                input[type="checkbox"]{
+                    position: absolute;
+                    left: 50px;
+                }
+
+                button[type="button"] {
+                    // background-color: red;
+                    // color: white;
+                    // border: none;
+                    margin-right: 15px;
+                    margin-bottom: 2px;
+                    margin-top: 2px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 10px;
+                    height: 10px;
+                    // text-decoration: none;
+                }
+                
+                }
+        }
+    }
+}
+
+
+    .footer{
+    text-align: center;
+        font-size: 14px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+
+@media screen and (min-width: 481px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul{
+            li{
+                input[type="checkbox"] {
+                    float: right;
+                    margin-right: 10px;
+                    }
+            }
+        }
+    }
+}
