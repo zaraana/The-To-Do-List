@@ -7,7 +7,7 @@
 
 ### Tнє αѕѕιgηмєηт:
 
-For this project we were asked to create a digital version of this[hanmade list](<assets/images/handmade.gif>)
+For this project we were asked to create a digital version of this ![hanmade list](<assets/images/handmade.gif>)
 
 WITH THE FOLLOWING REQUIREMENTS:
 * Semantic HTML, SCSS
@@ -36,6 +36,6 @@ WITH THE FOLLOWING REQUIREMENTS:
 
 ![tada](assets/images/tada.gif)
 
-#### [🅗🅔🅡🅔](https://zaraana.github.io/The-To-Do-List/)
+## [🅗🅔🅡🅔](https://zaraana.github.io/The-To-Do-List/)
 
 
