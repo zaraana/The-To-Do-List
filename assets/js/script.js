@@ -19,7 +19,8 @@ addTask.addEventListener("click", function(){
 
         const deleteButton = document.createElement("button");
         deleteButton.type = "button";
-        deleteButton.textContent = "x";
+        // deleteButton.className = "delete-button";
+        deleteButton.innerHTML = '<i class="fad fa-trash"></i>';
         listItem.appendChild(deleteButton);
 
         deleteButton.addEventListener("click", function(){
