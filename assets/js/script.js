@@ -37,7 +37,7 @@ addTask.addEventListener("click", function(){
                 p.classList.add("completed");
 
             } else if (checkbox !== checked) {
-                p.classList = ("incomplete");
+                p.classList.add("incomplete");
             }else {
                 p.classList.remove("completed");
             }
