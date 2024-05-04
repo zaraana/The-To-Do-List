@@ -36,7 +36,8 @@ WITH THE FOLLOWING REQUIREMENTS:
 
 ![tada](assets/images/tada.gif)
 
-<div align="center"> 👇
+ <div align="center"> 👇
+ 
 ## <div align="center"> [🅗🅔🅡🅔](https://zaraana.github.io/The-To-Do-List/)
 
 
