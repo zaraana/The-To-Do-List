@@ -20,11 +20,11 @@ WITH THE FOLLOWING REQUIREMENTS:
 ## Contents:
 
 - [x] input box;
-- [ ] Add task button;
+- [x] Add task button;
 - [ ] a task filter;
-- [ ] checkbox;
-- [ ] delete button;
-- [ ] completed task line-through;
+- [x] checkbox;
+- [x] delete button;
+- [x] completed task line-through;
 - [ ] An array or object to store the tasks;
 - [ ] Storage of todos tasks in the localstorage and retrieve on load;
 
