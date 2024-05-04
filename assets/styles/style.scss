@@ -111,28 +111,15 @@ header{
             
             li{
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 list-style: none;
                 font-size: 14px;
                 cursor: pointer;
                 font-family: "Playfair Display";
-                input[type="checkbox"]{
-                    position: absolute;
-                    left: 50px;
-                }
+                
 
-                button[type="button"] {
-                    // background-color: red;
-                    // color: white;
-                    // border: none;
-                    margin-right: 15px;
-                    margin-bottom: 2px;
-                    margin-top: 2px;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    width: 10px;
-                    height: 10px;
-                    // text-decoration: none;
+                i{
+                    margin-top: 10px;
                 }
                 
                 }
