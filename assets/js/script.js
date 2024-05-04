@@ -10,21 +10,20 @@ addTask.addEventListener("click", function(){
 
     if(taskText !== ""){
         const listItem = document.createElement("li");
-        
+        const div = document.createElement("div");
+
         const checkbox = document.createElement("input");
         checkbox.type = "checkbox";
-        listItem.appendChild(checkbox);
+        div.appendChild(checkbox);
         
         const p = document.createElement("p");
         p.textContent = taskText;
-        listItem.appendChild(p);
+        div.appendChild(p);
+        listItem.appendChild(div);
         inputBox.value = "";
 
         const deleteButton = document.createElement("i");
-        //deleteButton.type = "button";
         deleteButton.classList.add('fas', 'fa-trash');
-        // deleteButton.className = "delete-button";
-        //deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
         listItem.appendChild(deleteButton);
 
         deleteButton.addEventListener("click", function(){
@@ -37,7 +36,9 @@ addTask.addEventListener("click", function(){
             if (checkbox.checked) {
                 p.classList.add("completed");
 
-            } else {
+            } else if (checkbox !== checked) {
+                p.classList = ("incomplete");
+            }else {
                 p.classList.remove("completed");
             }
             });
@@ -49,39 +50,49 @@ addTask.addEventListener("click", function(){
     }
 });
 
-
-const filterSelect = document.getElementById("filter-tasks");
+    const filterSelect = document.getElementById("filter-tasks");
 
     filterSelect.addEventListener("change", function() {
     const selectedOption = this.value;
+    const tasks = document.getElementById("task-list").children;
 
-    taskList.querySelectorAll("li").forEach(function(task) {
+    for (let i = 0; i < tasks.length; i++) {
+        const task = tasks[i];
+
         if (selectedOption === "all") {
-        task.classList.remove("hidden");
-        } else if (selectedOption === "completed" && task.querySelector("input[type='checkbox']").checked) {
-        task.classList.remove("hidden");
-        } else if (selectedOption === "not-completed" && !task.querySelector("input[type='checkbox']").checked) {
-        task.classList.remove("hidden");
+        task.style.display = "";
+        } else if (selectedOption === "completed") {
+        if (task.querySelector("p").classList.contains("completed")) {
+            task.style.display = "";
         } else {
-        task.classList.add("hidden");
+            task.style.display = "none";
         }
-    });
+        } else if (selectedOption === "incomplete") {
+        if (task.querySelector("p").classList.contains("incomplete")) {
+            task.style.display = "";
+        } else {
+            task.style.display = "none";
+        }
+        }
+    }
     });
 
 
-        const taskInput = document.getElementById("input-box");
-        const addButton = document.querySelector("button");
+
+
+        // const taskInput = document.getElementById("input-box");
+        // const addButton = document.querySelector("button");
         
-        addButton.addEventListener("click", function() {
-        console.log(taskInput.value);
-        const newTask = {
-            text: taskInput.value,
-        };
-        const taskList = JSON.parse(localStorage.getItem("tasks")) || [];
-        taskList.push(newTask);
-        localStorage.setItem("tasks", JSON.stringify(taskList));
-        // clear the input field
-        taskInput.value = "";
-        });
+        // addButton.addEventListener("click", function() {
+        // console.log(taskInput.value);
+        // const newTask = {
+        //     text: taskInput.value,
+        // };
+        // const taskList = JSON.parse(localStorage.getItem("tasks")) || [];
+        // taskList.push(newTask);
+        // localStorage.setItem("tasks", JSON.stringify(taskList));
+        // // clear the input field
+        // taskInput.value = "";
+        // });
 
 

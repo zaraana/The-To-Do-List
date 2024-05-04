@@ -98,19 +98,19 @@ header img {
 .container .to-do-list ul li {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   font-size: 14px;
-  margin-left: -50px;
   cursor: pointer;
   font-family: "Playfair Display";
 }
-.container .to-do-list ul li p {
-  margin-left: -100px;
-  text-align: right;
+.container .to-do-list ul li div {
+  display: flex;
+  flex-direction: row;
 }
 .container .to-do-list ul li i {
   margin-top: 13px;
+  padding-right: 30px;
 }
 
 .footer {
