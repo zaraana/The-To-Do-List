@@ -20,7 +20,7 @@ addTask.addEventListener("click", function(){
         p.textContent = taskText;
         div.appendChild(p);
         listItem.appendChild(div);
-        inputBox.value = "";
+
 
         const deleteButton = document.createElement("i");
         deleteButton.classList.add('fas', 'fa-trash');
