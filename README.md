@@ -38,11 +38,13 @@ WITH THE FOLLOWING REQUIREMENTS:
 ## 𝙻𝚎𝚝'𝚜 𝚜𝚎𝚎 𝚑𝚘𝚠 𝚝𝚑𝚎 𝚊𝚙𝚙 𝚠𝚒𝚕𝚕 𝚕𝚘𝚘𝚔 𝚕𝚒𝚔𝚎 𝚊𝚝 𝚝𝚑𝚎 𝚎𝚗𝚍 𝚘𝚏 𝚝𝚑𝚎 𝚙𝚛𝚘𝚓𝚎𝚝....
 
 
-
+<div align="center">
+ 
 ![tada](assets/images/tada.gif)
 
- <div align="center"> 👇
+
+👇
  
-## <div align="center"> [🅗🅔🅡🅔](https://zaraana.github.io/The-To-Do-List/)
+## [🅗🅔🅡🅔](https://zaraana.github.io/The-To-Do-List/)
 
-
+</div>
