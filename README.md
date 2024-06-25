@@ -5,9 +5,10 @@
 ### <div align="center"> 𝙏𝙝𝙚-𝙏𝙤-𝘿𝙤-𝙇𝙞𝙨𝙩
 
 ## Tнє αѕѕιgηмєηт:
-For this project we were asked to create a digital version of a To Do List;
+For this project we were asked to create a 
+digital version of a To Do List;
+<img align="right" width="50%" src="assets/images/handmade.gif"><br>
 
-![hanmade list](<assets/images/handmade.gif>)
 
 WITH THE FOLLOWING REQUIREMENTS:
 * Semantic HTML, SCSS
